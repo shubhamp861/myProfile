@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition:all .3s ease;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+body{
+    background-color: var(--primary);
+}
+header{
+    background-color: var(--dark);
+    width: 100%;
+    height: 100vh;
+    /* margin: 3px; */
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 93% 90%, 20% 94%, 0 100%, 0 0);  
+    position: relative;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--primary);
+    z-index: -1;
+}
+nav{
+    display: flex;
+    color: white;  
+    justify-content:space-between;
+    height:15vh;
+    border: 1px solid white; 
+    /* background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);   */
+}
+.navright .link{
+    margin-top: 25px;   
+    margin-right: 25px;  
+    margin-bottom: 15px;
+}
+.navright .link a{
+    color: white;
+    text-decoration: none;
+    margin: 15px;  
+}
+.logo{
+    margin-top: 25px;
+    margin-left: 25px; 
+    color: var(--primary);border-bottom: 1px solid var(--primary) ;
+    border-right: 1px solid var(--primary) ;
+    padding-right: 10px;
+}
+.navright .link a:hover{
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary) ;
+    border-right: 1px solid var(--primary) ;
+    padding-right: 10px;
+}
+.navright .link a:nth-child(3){
+    background: var(--primary);
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+}
+.navright .link a:nth-child(3):hover{
+    color: black;
+    background: white;
+
+}
+.profilesection{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    height: 85vh;
+}
+.leftsec img{
+    width: 300px;
+    height: 300px;
+    border-radius: 500px;
+    filter: grayscale(100%);
+    justify-content: center;
+}
+.rightsec h5, .rightsec h2 span, .secbtn button{
+    color: var(--primary);
+}
+.secbtn button{
+    background: transparent;
+    padding: 13px;
+    border: 1px solid var(--primary);
+}
+.rightsec h5,h2,.secbtn,p{
+    margin: 15px;
+}
+
+.rightsec h2,h5{
+    letter-spacing: 5px;
+}
+.rightsec p{
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+.aboutMe{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.aboutmeleft{
+    margin-top: 40px;
+}
+.aboutmeright{
+    margin-top: 40px;
+}
+.socialicon img{
+    width: 37px;
+    height: 35px;
+    margin: 9px;
+    margin-left: 19px;
+    margin-top: 27px;
+    box-shadow: 6px 6px 6px 0px rgb(0 0 0 / 75%);
+    padding: 6px;
+}
+.aboutmeright img{
+    width: 380px;
+    height:380px;
+}
+.aboutmeleft h2 span,h5 span{
+    /* color: var(--primary); */
+    color: white;
+}
+.aboutmeleft h5,h6{
+ margin-left: 15px;
+}
+.aboutmeleft p{
+    font-size: 25px;
+}
+.aboutmeleft h6{
+    color: white;
+}
+.tech{
+    margin-top: 80px;
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    background-color: #9cdbe7d0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 6px 6px 6px 0px rgb(0 0 0 / 75%);
+}
+.card{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: none;
+    box-shadow: 6px 6px 6px 0px rgb(0 0 0 / 75%);
+}
+.tag{
+    text-align: center;
+    transform: translateY(-45%);
+    background-color: var(--primary);
+    width: 50%;
+    margin: auto;
+    height: 30%;
+    padding-top: 18px;
+    color: black;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px 0px rgb(0 0 0 / 75%);
+   
+}
+.card h3{
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.card p{
+    letter-spacing: 1px;
+    font-size: 11px;
+    text-align: center;
+}
+.card:hover{
+   
+    transform: translateY(-8%);
+    transition: all .5s;
+}
+.tag:hover{
+    transform: translateY(+.40%);
+}
+.label{
+    text-align: center;
+    letter-spacing: 12px;
+    padding: 38px;
+}
+.label span{
+    color: white;
+    font-size: 1.2rem;
+}
+.footer{
+    width: 100%;
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    margin-top: 41px;
+    padding: 24px;
+    box-shadow: 6px 6px 6px 0px rgb(0 0 0 / 75%);
+    
+}
+.footer h2{
+ display: inline;
+}
+.last{
+    height: 15px;
+}
