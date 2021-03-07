@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <header>
         <nav>
             <div class="navleft">
@@ -19,9 +19,9 @@
             </div>
             <div class="navright">
                 <div class="link">
-                    <a href="#">About Me</a>
-                    <a href="#">Social Link</a>
-                    <a href="#" class="navbtn">Contact</a>
+                    <a href="#aboutme">About Me</a>
+                    <a href="#aboutme">Social Link</a>
+                    <a href="#foot" class="navbtn">Contact</a>
                 </div>
             </div>
         </nav>
@@ -33,31 +33,31 @@
                 <h5>Shubham Patel</h5>
                 <h2>I'm a Java Full Stack<br />
                     <span>Developer</span> </h2>
-                <p>Lorem ipsum dolor sit amet consectetur,
-                    <br /> adipisicing elit. Deleniti,
-                    cumque cupiditate fuga repellendus<br /></p>
-                <div class="secbtn"><button>Download CV</button></div>
+                <p>1 year 3 months of Experience as Java Full Stack Developer at Mphasis LTD.<br>
+                 Hands on experience in Java, Spring, Spring Boot and Angular.</p>
+                <div class="secbtn"><a href="ShubhamPatel_Resume (1).pdf" download><button>Download CV</button></a>
+                    </div>
 
             </div>
         </section>
     </header>
     <!-- header END -->
     <!-- About me -->
-    <section class="aboutMe">
+    <section class="aboutMe" id="aboutme">
         <div class="aboutmeright">
             <img src="profileaboutme.png" alt="">
         </div>
         <div class="aboutmeleft">
             <h2>About <span> Me</span></h2>
             <h5>Hello I'm <span> SHUBHAM PATEL</span></h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
-                A magni blanditiis asperiores quae commodi autem similique<br>
-                exercitationem quod mollitia omnis.</p>
-            <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, obcaecati.</h6>
+            <p>I'm currently working as a programmer for Mphasis ltd from AUG-2019,<br>
+                its provide leading infrastructure technology and applications outsourcing services.<br>
+                 I've been learning modern web application development in the process.</p>
+            <!-- <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, obcaecati.</h6> -->
             <div class="socialicon">
                 <a href="https://stackoverflow.com/users/13480575/shubham"><img src="stackoverflow.png" alt=""></a>
                 <a href="https://github.com/shubhamp861"><img src="github.png" alt=""></a>
-                <a href="#"><img src="instagram.png" alt=""></a>
+                <a href="https://www.instagram.com/_shubham__patel861?r=nametag"><img src="instagram.png" alt=""></a>
             </div>
         </div>
     </section>
@@ -70,57 +70,79 @@
             <div class="tag">
                 JAVA
             </div>
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor,
-                sit amet consectetur
-                adipisicing elit. Est, vel!</p>
+            <h3>BackEnd Development</h3>
+            <p>1 Year 3 Month 
+                <br>
+                Java, Spring, Spring boot.
+            </p>
         </div>
         <div class="card">
             <div class="tag">
                 ANGULAR
             </div>
             <h3>Web Development</h3>
-            <p>Lorem ipsum dolor,
-                sit amet consectetur
-                adipisicing elit. Est, vel!</p>
+            <p>7 Month <br>
+             Typescript 3.0+.
+            </p>
         </div>
         <div class="card">
             <div class="tag">
                 HTML
             </div>
             <h3>Web Development</h3>
-            <p>Lorem ipsum dolor,
-                sit amet consectetur
-                adipisicing elit. Est, vel!</p>
+            <p>  <p>8 Month <br>
+               HTML 5.
+               </p></p>
         </div>
         <div class="card">
             <div class="tag">
                 CSS
             </div>
             <h3>Web Development</h3>
-            <p>Lorem ipsum dolor,
-                sit amet consectetur
-                adipisicing elit. Est, vel!</p>
+            <p>  <p>8 Month <br>
+                CSS, Bootstrap.
+               </p></p>
         </div>
         <div class="card">
             <div class="tag">
                 JS
             </div>
             <h3>Web Development</h3>
-            <p>Lorem ipsum dolor,
-                sit amet consectetur
-                adipisicing elit. Est, vel!</p>
+            <p>  <p>8 Month <br>
+                JavaScript
+               </p></p>
         </div>
 
     </section>
     <!-- technology end -->
     <section class="footer" id="foot">
         <h2>Last Update : 05/March/2021</h2>
+         <br>
+         <h2>Gmail ID# sp7075892@gmail.com</h2>
     </section>
     <div class="last">
 
     </div>
-    
+    <script>
+        document.onkeydown = function(e) {
+    if(e.keyCode == 123) {
+     return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+     return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+     return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+     return false;
+    }
+
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+     return false;
+    }      
+ }
+        </script>
 </body>
 
 </html>
