@@ -111,10 +111,17 @@
 
     </section>
     <!-- technology end -->
-    <section class="footer">
+    <section class="footer" id="foot">
         <h2>Last Update : 05/March/2021</h2>
     </section>
     <div class="last">
+        <script>
+        var elmnt = document.getElementById("foot");
+        var txt = "";
+        txt += "Height" + elmnt.offsetHeight + "px<br>";
+        txt += "Width " + elmnt.offsetWidth + "px";
+        elmnt.innerHTML = txt;
+    </script>
         
     </div>
 </body>
