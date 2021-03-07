@@ -17,7 +17,11 @@
 }
 body{
     background-color: var(--primary);
+   
 }
+html {
+    scroll-behavior: smooth;
+  }
 header{
     background-color: var(--dark);
     width: 100%;
@@ -87,6 +91,8 @@ nav{
     color: white;
     align-items: center;
     height: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .leftsec img{
     width: 300px;
@@ -151,7 +157,7 @@ nav{
  margin-left: 15px;
 }
 .aboutmeleft p{
-    font-size: 25px;
+    /* font-size: 25px; */
 }
 .aboutmeleft h6{
     color: white;
@@ -298,6 +304,12 @@ nav{
   }
   .footer h2{
      font-size: 10px; 
+  }
+  .label{
+      font-size: 10px;
+  }
+  .label span{
+    font-size: 10px;
   }
 
 }
