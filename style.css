@@ -242,7 +242,7 @@ nav{
 .socialicon a:nth-child(3) img:hover{
     transform: translateY(-20%);
 }
-@media (max-width: 360px) {
+@media (max-width: 300px) {
      nav{
          border: none;
          justify-content: space-evenly
